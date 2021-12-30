@@ -1,11 +1,11 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 
-function reducer1(state, action) {
+function reducer1(state = {}, action) {
   return state;
 }
 
-function reducer2(state, action) {
+function reducer2(state = {}, action) {
   return state;
 }
 

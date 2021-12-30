@@ -69,13 +69,13 @@ module.exports = function ({
     mode: isDevMode ? 'development' : 'production',
     // target: 'web',
     entry: [
-      // './src/js/singleSpaEntry.js',
-      './src/js/main.js'
+      './src/js/singleSpaEntry.js',
+      // './src/js/main.js'
     ],
     output: {
       path: path.join(projectRoot, 'public'),
       filename: 'dist/dispatch.js',
-      libraryTarget: 'system'
+      libraryTarget: 'umd'
     },
     resolve: {
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
