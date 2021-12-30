@@ -1,0 +1,34 @@
+@import 'src/scss/fonts.scss';
+@import 'src/scss/resources.scss';
+
+:global {
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  input::-ms-clear {
+    width: 0;
+    height: 0;
+  }
+
+  h1 {
+    letter-spacing: 1px;
+  }
+
+  .reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .capitalize {
+    text-transform: capitalize;
+  }
+}

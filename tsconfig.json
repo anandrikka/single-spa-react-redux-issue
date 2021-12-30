@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowJs": true,            // allow a partial TypeScript and JavaScript codebase
+    "baseUrl": "./src",
+    "incremental": true,
+    "tsBuildInfoFile": "./buildcache/typescript",
+    "jsx": "react",             // use typescript to transpile jsx to js
+    "lib": [ "dom", "es5", "es6", "es2017", "scripthost" ],
+    "module": "commonjs",       // specify module code generation
+    "outDir": "./dist/",        // path to output directory
+    "paths": {
+      "app/*": ["js/components/app/*"],
+      "components/*": ["js/components/*"],
+      "config/*": ["config/*"],
+      "hooks/*": ["js/hooks/*"],
+      "interfaces/*": ["js/interfaces/*"],
+      "test/*": ["js/test/*"],
+      "messages/*": ["messages/*"],
+      "services/*": ["js/services/*"],
+      "svg/*": ["js/components/svg/*"]
+    },
+    "resolveJsonModule": true,  // allow importing JSON modules
+    "sourceMap": true,          // allow sourcemap support
+    "strictNullChecks": true,   // enable strict null checks as a best practice
+    "target": "es5",             // specify ECMAScript target version
+    "downlevelIteration": true  // allow full support for iterables
+  }
+}

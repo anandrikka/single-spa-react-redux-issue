@@ -1,0 +1,32 @@
+$z-index-float:       10;
+$z-index-sidedrawer:  50;
+$z-index-header:      100;
+$z-index-popover:     1000;
+$z-index-modal:       10000;
+$z-index-alert:       100000;
+
+$header-height: 48px;
+$filter-height: 30px;
+$selection-controls-height: 40px;
+$autosuggest-container-height: 118px;
+
+$margin: 20px;
+
+$black: #000;
+
+$box-shadow-1: 0 4px 8px 0 rgba($black, 0.1);
+$box-shadow-2: 0 2px 4px 0 rgba($black, 0.5);
+$box-shadow-top: 0 -4px 4px 0 rgba($black, 0.1);
+
+$table-checkbox-width: 16px;
+$table-toggle-width: 70px;
+
+// eventually bring to snapkit
+$ss-outer-space: #003244;
+$ss-twilight: #005578;
+$ss-horizon: #f0faff;
+
+
+@mixin transparent-gradient($color) {
+  background-image: linear-gradient(to right, rgba($color,0) 0%, rgba($color,1) 100%);
+}
